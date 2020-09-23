@@ -1,0 +1,117 @@
+*
+{
+  margin:0;
+  padding:20px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Courgette;
+  font-size: 15px;
+}
+
+.container {
+  position: relative;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .content {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  top: 70%;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  padding: 80px,50px,50px,50px;
+
+}
+
+
+section {
+  position: relative;
+  width: 100%;
+  padding: 90px 10px 50px 10px;
+  overflow: scroll;
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.image.image1 {
+  width: 500px;
+  height: 500px;
+  float: left;
+  border-radius: 50%;
+  margin: 20px;
+  left: 0;
+  shape-outside: circle();
+  border: 5px solid #000000;
+  object-fit: cover;
+
+
+  }
+
+
+.image.image2 {
+  width: 300px;
+  height: 300px;
+  float: right;
+  right:0;
+  border-radius: 50%;
+  margin: 20px;
+  shape-outside: circle();
+  border: 5px solid #000000;
+  object-fit: cover;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2em;
+  font-family: bold;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.content h1 {
+  padding: 0 0 4px;
+  color: white;
+  font-size: 4em;
+  font-family: bold ;
+  text-shadow: 2px 2px 4px white;
+
+}
+
+.image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+ 
+.c2 p{
+  text-align: justify;
+  font-size: 2em;
+  font-family: arial;
+}
+
+section p{
+  text-align: justify;
+  font-size: 2em;
+  padding: 40px 90px;
+}
+
+.iii {
+  background-color: #D3D3D3;
+}

@@ -1,0 +1,5 @@
+{
+  "open-in-browser.default": "chrome",
+  "references.preferredLocation": "view",
+  "liveServer.settings.CustomBrowser": "firefox"
+}
