@@ -1,0 +1,99 @@
+body {
+  background: #88DBF7;
+}
+
+.nav-bar {
+  position: fixed;
+  width:100%;
+  transition: .5s;
+  top:0px;
+  padding: 25px 50px 25px 25px;
+  z-index: 1;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 22px;
+  padding: 10px 50px;
+  color:black;
+  cursor: pointer;
+  float: right;
+  border-radius: 15px;
+  transition: .5s;
+  text-decoration: none;
+}
+
+.nav-bar ul li:hover {
+  background: black;
+  color: white;
+}
+
+.submission h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  padding: 50px;
+}
+
+.submission {
+  position: relative;
+  max-width:400px;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.desc p {
+  padding: 150px 150px 0px 150px;
+  font-size: 20px;
+  font-family: 'Lobster', cursive;
+  text-align:center;
+}
+
+.dd {
+  text-align: center;
+  font-size: 40px;
+  padding: 0px 0px 100px 0px;
+  color: blue;
+}
+
+.submission p {
+  width: 100%;
+  font-size: 18px;
+  padding: 80px 0px 60px 0px;
+}
+
+.submission button {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  background-color: #00008B;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius:44px;
+}
+
+.submission input {
+  display:block;
+  width :100%;
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+.submission label {
+  font-family: 'Big Shoulders Stencil Display', cursive;
+
+}
+
+.txt {
+  margin: 20px 0px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 10px;
+}
+
+.submission button:hover {
+  background: black;
+}

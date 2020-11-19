@@ -2,29 +2,89 @@
 <head>
   <title> Prediction of price of diamond   </title>
   <meta name="viewport" content="width=device-width , initial scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="edit.js" type="text/javascript"> </script>
   <link rel="stylesheet" type="text/css" href="pred.css">
 </head>
 
 <body>
-  <h1> Price <br> Calculator <h1>
-  <form id="">
-    <label for="cut"> CUT </label>
-    <input type="text" required placeholder="Cut of diamond" tab-index="1" required/>
+<div class="nav-bar" id='navv'>
+  <ul>
+    <div class="header"> <img src="images/dh.jpg" width="70px" height="65px"> </div>
+    <a href="predict.html"> <li> HARBOUR </li> </a>
+    <a href="facts.html"> <li> FACTS </li> </a>
+    <a href="education.html"> <li> EDUCATION </li> </a>
+    <a href="about.html"> <li> ABOUT </li> </a>
+  </ul>
+</div>
+<div class="desc">
+  <p> Calculate the price of diamond before buying to avoid getting ripped off. You can use this calculator to predict the price of diamond before purchasing it from the local retailer, best for a little help in negotiation. Enter inputs accoding to the following. <br> 1 CARAT = 0.2gm <br> LENGTH , WIDTH and DEPTH all in mm. <br> 
+  CUT 'Ideal':1 , 'Good':2 , 'Very Good':3 , 'Fair':4 , 'Premium':5 <br>
+  COLOR 'E':1 ,'D':2 ,'F':3 ,'G':4 ,'H':5 ,'I':6 ,'J':7 <br>
+  CLARITY 'VVS1':1 ,'IF':2 ,'VVS2':3 ,'VS1':4 ,'I1':5 ,'VS2':6 ,'SI1':7 ,'SI2':8</p>
+</div>
+    <div class="submission">
+  <form action='/predict' method="POST">
+  <h1> Price Calculator </h1>
+    <label for="i1"> CARAT </label>
+    <input type="text" class="txt"   name="in1" id="i1" tab-index="1" required/>
     <br>
-    <label for="clarity"> CLARITY </label>
-    <input type="text" required placeholder="Clarity of diamond" tab-index="2" required/>
+    <label for="i2"> LENGTH </label>
+    <input class="txt" type="text" name="in2" id="i2"  tab-index="2" required/>
     <br>
-    <label for="color"> COLOR </label>
-    <input type="text" required placeholder="Color of diamond" tab-index="3" required/>
+    <label for="i3"> WIDTH </label>
+    <input class="txt" type="text" name="in3" id="i3" tab-index="3" required/>
     <br>
-    <label for="depth"> DEPTH </label> 
-    <input type="text" required placeholder="Depth of diamond" tab-index="4" required/>
+    <label for="i4"> DEPTH </label>
+    <input class="txt" type="text" name="in4" id="i4" tab-index="4" required/>
     <br>
-    <label for="carat"> CARAT </label>
-    <input type="text" required placeholder="Carat of diamond" tab-index="5" required/>
+    <label for="i5"> CUT </label>
+    <input class="txt" type="text" name="in5" id="i5" tab-index="5" required/>
     <br>
+    <label for="i6"> COLOR </label>
+    <input class="txt" type="text" name="in6" id="i6" tab-index="6" required/>
+    <br>
+    <label for="i7"> CLARITY </label>
+    <input class="txt" type="text" name="in7" id="i7" tab-index="7" required/>
     <button type="submit" > Predict </button>
     <button type="reset" > Reset </button>
   </form>
+  </div>
+  <br>
+  <br>
+  <div class="dd">
+  {{prediction_text}}
+  </div>
+<div class="footer">
+    <div class="footer-content">
+      <div class="footer-section miss">
+      <h1 class="ltx"><span>Our</span><br>Mission</h1>
+      <p>  </p>
+      </div>
+      <div class="footer-section feed">
+        <h2> FeedBack </h2>
+        <form action="about.html" method="post">
+          <input type="email" name="email" class="text-input contact-input" placeholder="Your email address..."> <br>
+          <textarea name="msg" class="text-input contact-input" placeholder="Your feedback..."></textarea><br>
+          <button type="submit" class="btn"> <i class="fa fa-envelope"></i><br> Send </button>
+        </form>
+      </div>
+      <div class="footer-section cont">
+        <h2> Contact Us </h2>
+        <div class="contact">
+        <span> <i class="fa fa-phone"></i> &nbsp; 8827541219 </span> <br><br>
+        <span> <i class="fa fa-envelope"> </i> &nbsp; priya@gmail.com </span>
+        </div>
+      <div class="social">
+      <br>
+        <a href="#"><i class="fa fa-facebook"  style="font-size:20px; color:white"></i></a>
+        <a href="#"><i class="fa fa-instagram"  style="font-size:20px; color:white"></i></a>
+        <a href="#"><i class="fa fa-twitter"  style="font-size:20px; color:white"></i></a>
+        <a href="#"><i class="fa fa-youtube"  style="font-size:20px; color:white"></i></a>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
