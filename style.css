@@ -29,15 +29,11 @@ body {
   float: right;
   border-radius: 15px;
   transition: .5s;
+  text-decoration: none;
 }
 
 .nav-bar ul li:hover {
   background: black;
-  color: white;
-}
-
-.nav-bar.current {
-  background-color: black;
   color: white;
 }
 
@@ -72,9 +68,9 @@ body {
 
 .ab_lin p {
   text-align: center;
-  font-size: 40px;
-  padding: 150px;
-  font-family: cursive;
+  font-size: 35px;
+  padding: 150px 150px 50px 150px;
+  font-family: 'Anton', sans-serif;
   font-style: oblique;
 }
 
@@ -96,9 +92,9 @@ section {
 }
 
 .image.image1 {
-  padding: 200px;
-  width: 400px;
-  height: 400px;
+  padding: 150px;
+  width: 200px;
+  height: 200px;
   float: left;
   border-radius: 50%;
   shape-outside: circle();
@@ -108,7 +104,7 @@ section {
 
 
 .image.image2 {
-  padding: 200px;
+  padding: 150px;
   width: 200px;
   height: 200px;
   float: right;
@@ -141,7 +137,6 @@ section h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
 }
 
 .iii.container img {
@@ -150,7 +145,14 @@ section h2 {
 }
 
 .c1 h2 {
-  padding: 60px 50px;
+  padding: 60px 50px 20px;
+}
+
+.c1 p {
+  padding: 0px 20px;
+  text-align: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
 }
 
 .c2 p{
@@ -276,11 +278,75 @@ section p {
 }
 
 .para img {
-  position: absolute;
+  position: relative;
   float: left;
   padding: 200px;
 }
 
 .back body{
   background-image: url('images\backk.jpg');
+}
+
+.footer {
+  position: relative;
+  background: #303036;
+  color: white;
+  height: 320px;
+}
+
+.footer .footer-content {
+  display: flex; 
+  height: 320px;
+  border: 1px solid white;
+  font-size: 20px;
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2{
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  padding: 0px 0px 10px 0px;
+}
+
+.footer .footer-content .miss h1 span {
+  color: #05f7ff;
+}
+
+.footer .footer-content .footer-section {
+  flex: 1;
+  padding: 30px;
+}
+
+.footer .footer-content .feed {
+  width: 200px;
+}
+
+.footer .footer-content .footer-section .cont .contact {
+  margin-top:10px;
+}
+
+.footer .footer-content .feed .contact-input {
+  background: #272727;
+  color: #bebdbd;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+  padding: .8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+}
+
+.footer .footer-content .feed .btn {
+  background: #05f7ff;
+  color: black;
+  width: 10%;
+  border-radius: 8px;
+}
+
+.footer .footer-content .feed .btn:hover {
+  background: white;
+}
+
+.footer .footer-content .feed .contact-input:focus {
+  background: #1a1a1a;
 }

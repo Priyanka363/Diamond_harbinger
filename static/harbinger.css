@@ -1,0 +1,352 @@
+*
+{
+  margin:0;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Garamond;
+  font-size: 15px;
+}
+
+.nav-bar {
+  position: fixed;
+  width:100%;
+  transition: .5s;
+  top:0px;
+  padding: 25px;
+  z-index: 1;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 22px;
+  padding: 10px 50px;
+  color:black;
+  cursor: pointer;
+  float: right;
+  border-radius: 15px;
+  transition: .5s;
+  text-decoration: none;
+}
+
+.nav-bar ul li:hover {
+  background: black;
+  color: white;
+}
+
+.container {
+  position: relative;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.container.iimg img{
+  padding:300px;
+  position: relative;
+}
+
+.container .content {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  top: 70%;
+  left: 0;
+  margin: auto;
+  max-width: 100%;
+  padding: 80px,50px,50px,50px;
+
+}
+
+.ab_lin p {
+  text-align: center;
+  font-size: 35px;
+  padding: 150px 150px 50px 150px;
+  font-family: 'Anton', sans-serif;
+  font-style: oblique;
+}
+
+.ab_lin a {
+  color: blue;
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  padding: 90px 10px 50px 10px;
+  overflow: hidden;
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+}
+
+.image.image1 {
+  padding: 150px;
+  width: 200px;
+  height: 200px;
+  float: left;
+  border-radius: 50%;
+  shape-outside: circle();
+  border: 5px solid #000000;
+  object-fit: cover;
+  }
+
+
+.image.image2 {
+  padding: 150px;
+  width: 200px;
+  height: 200px;
+  float: right;
+  border-radius: 50%;
+  shape-outside: circle();
+  border: 5px solid #000000;
+  object-fit: cover;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 4em;
+  font-family: bold;
+  text-shadow: 2px 4px 8px #000000;
+}
+
+.content h1 {
+  padding: 0 0 4px;
+  color: white;
+  font-size: 4em;
+  font-family: bold ;
+  text-shadow: 2px 2px 4px white;
+
+}
+
+.image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.iii.container img {
+  width: 500px;
+  height: 500px;
+}
+
+.c1 h2 {
+  padding: 60px 50px 20px;
+}
+
+.c1 p {
+  padding: 0px 20px;
+  text-align: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+}
+
+.c2 p{
+  text-align: center;
+  font-family: Garamond;
+  padding: 30px 300px;
+  font-style: oblique;
+}
+
+.c2 h2 {
+  padding:50px 0px 0px ;
+}
+
+.c3 p{
+  font-size:40px;
+}
+
+.c3 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section p {
+  text-align: justify;
+  font-size: 2.5em;
+  padding: 20px 40px;
+}
+
+.imag {
+  position:relative;
+  overflow:hidden;
+}
+
+.imag img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imag.img1 {
+  width:370px;
+  height:370px;
+  float:right;
+  border-radius:50%;
+  object-fit:cover;
+  right:0;
+}
+
+.imag.img2 {
+  width:330px;
+  height:330px;
+  float:left;
+  border-radius:50%;
+  object-fit:cover;
+  right:0;
+}
+
+.header {
+  position: absolute;
+}
+
+.walls img {
+  position: absolute;
+  float: right;
+}
+
+.wallss img{
+  position: relative;
+  float:right;
+  padding: 0px 150px 0px 200px;
+}
+
+.walls h1 {
+  position: relative;
+  padding: 280px 250px 0px;
+  color: white;
+  text-shadow: 2px 0px 8px black;
+}
+
+.walls p {
+  position: relative;
+  font-family: garamond;
+  font-stretch: condensed;
+}
+
+.walls h2 {
+  position: relative;
+  padding: 500px 100px 0px 100px;
+  font-weight: 100;
+  font-family: 'Bellefair', serif;
+}
+
+
+.walls p {
+  position: relative;
+  color: white;
+  padding: 30px 400px 0px 100px;
+}
+
+.para p{
+  position: relative;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 40px 40px 50px 100px;
+}
+
+.para.pp {
+  padding:50px 300px;
+}
+
+.para h3 {
+  position: relative;
+  font-family: 'Bellefair', serif; 
+  padding: 150px 250px 0px 0px;
+  text-align: right;
+  font-weight: lighter;
+}
+
+.para img {
+  position: relative;
+  float: left;
+  padding: 200px;
+}
+
+.back body{
+  background-image: url('images\backk.jpg');
+}
+
+.footer {
+  position: relative;
+  background: #303036;
+  color: white;
+  height: 320px;
+}
+
+.footer .footer-content {
+  display: flex; 
+  height: 320px;
+  border: 1px solid white;
+  font-size: 20px;
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2{
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  padding: 0px 0px 10px 0px;
+}
+
+.footer .footer-content .miss h1 span {
+  color: #05f7ff;
+}
+
+.footer .footer-content .footer-section {
+  flex: 1;
+  padding: 30px;
+}
+
+.footer .footer-content .feed {
+  width: 200px;
+}
+
+.footer .footer-content .footer-section .cont .contact {
+  margin-top:10px;
+}
+
+.footer .footer-content .feed .contact-input {
+  background: #272727;
+  color: #bebdbd;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+  padding: .8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+}
+
+.footer .footer-content .feed .btn {
+  background: #05f7ff;
+  color: black;
+  width: 10%;
+  border-radius: 8px;
+}
+
+.footer .footer-content .feed .btn:hover {
+  background: white;
+}
+
+.footer .footer-content .feed .contact-input:focus {
+  background: #1a1a1a;
+}
